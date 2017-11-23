@@ -1,0 +1,24 @@
+.header-top {
+	padding: 10px 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	background: $white;
+	margin-bottom: 36px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	.navbar-collapse.collapse {
+		background: inherit;
+	}
+}
+
+header.home-top-header,
+.home-top-header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	.navbar-collapse.collapse {
+		background: inherit !important;
+	}
+}

@@ -1,0 +1,212 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media screen and (max-width: 480px) {
+	.product-links {
+		.btn {
+			margin-right: 0 !important;
+			padding: 15px 40px;
+		}
+	}
+	.nav-tabs li {
+		width: 100%;
+	}
+	.navbar-brand img {
+		width: 100%;
+	}
+	.navbar-toggle {
+		margin-right: 0 !important;
+	}
+	.result-item {
+		padding: 0 15px;
+		.item-header {
+			flex-direction: column;
+		}
+	}
+	.slider-thumb {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+/* Small devices (phones, 768px and down) */
+@media screen and (max-width: 767px) {
+	.result-item img,
+	.result-item .result-thumb {
+		max-width: 250px;
+		padding-top: 15px;
+	}
+
+	.result-title {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.navbar-brand img {
+		width: 100%;
+		max-width: 170px;
+	}
+	.navbar-toggle {
+		margin-right: 15px;
+	}
+	#carousel-home {
+		.item {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.news-section {
+		h3 {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.header-top,
+	header.home-top-header, .home-top-header {
+		position: fixed;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+	.home-top-header {
+		background: $white;
+	}
+
+	.btn-share, .btn-follow {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		display: inline-flex;
+	}
+	.header-description {
+		text-align: center;
+	}
+	.rating-wrap {
+		line-height: 32px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.single-item-content {
+		font-size: 16px;
+		p, span, b, strong, i, em {
+			font-size: inherit;
+		}
+	}
+	.product-control {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 10px;
+	}
+	.trust-box {
+		padding: 10px;
+		font-size: 16px;
+	}
+	.message-wrap {
+		textarea {
+			max-height: inherit;
+		}
+	}
+	
+	.message-body {
+		font-size: 16px;
+	}
+	.product-name {
+		font-size: 32px;
+		line-height: 35px;
+	}
+	.product-links {
+		justify-content: center;
+		align-content: center;
+		.btn:not(:last-child) {
+			margin-bottom: 15px;
+			margin-right: 15px;
+		}
+	}
+	.result-item img,
+	.result-thumb,
+	.single-thumb {
+		width: auto;
+		padding-bottom: 15px;
+	}
+	.result-item {
+		padding: 0 15px;
+
+	}
+	.result-categories,
+	.result-features {
+		padding: 0;
+	}
+	.result-features {
+		&.not-found {
+			margin-bottom: 35px;
+			.result-item {
+				min-height: inherit;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				margin: 0;
+				h6 {
+					margin: 15px 0;
+				}
+			}
+		}
+	}
+	.result-item:after {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		bottom: 0;
+	}
+	.result-item .item-content p {
+		font-size: 14px;
+	}
+	.header-rating {
+		margin-top: 10px;
+		
+	}
+	.btn-dropdown,
+	.result-dropdown {
+		margin-right: 30px !important;
+	}
+	/* TABS */
+	.tab-content {
+		min-height: inherit;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.result-item img,
+	.result-thumb,
+	.single-thumb {
+		width: auto;
+		padding-bottom: 15px;
+	}
+	.result-item:after {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		bottom: 0;
+	}
+	.result-item .item-content p {
+		font-size: 16px;
+	}
+	/* TABS */
+	.tab-content {
+		min-height: inherit;
+	}
+	
+	
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+}

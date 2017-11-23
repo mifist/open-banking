@@ -1,0 +1,144 @@
+.form-search {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: 32px;
+}
+
+.form-control {
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: auto;
+	color: $color-purpl;
+	font-size: 18px;
+	
+	&:focus,
+	&:hover {
+		outline: none;
+		border: none;
+		box-shadow: 0 0 10px rgba(42, 30, 92, 0.3);
+	}
+}
+
+/* Message */
+.form-message {
+	
+}
+
+
+.message-wrap {
+	position: relative;
+	textarea {
+		color: $color-purpl;
+		padding-left: 60px;
+		max-height: 55px;
+		@include transition(all .3s);
+		&:focus,
+		&:active,
+		&:checked {
+			max-height: inherit;
+		}
+	}
+	&:before,
+	&:after {
+		content: '\f044';
+		font-family: FontAwesome, sans-serif;
+		color: $color-purpl;
+		opacity: .5;
+		font-size: 25px;
+		position: absolute;
+		top: 11px;
+		left: 15px;
+	}
+	&:after {
+		content:  '| ';
+		left: 45px;
+		top: 10px;
+		font-size: 22px;
+	}
+}
+.message-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	.header-rating {
+		margin-right: 20px;
+	}
+}
+/****** Style Star Rating Widget *****/
+
+.rating-wrap {
+	line-height: 32px;
+}
+
+.rating-title {
+	font-size: 20px;
+	color: $color-purpl;
+	font-family: $fonts-robotoR;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+fieldset.header-rating label {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.header-rating {
+	border: none;
+	float: left;
+}
+
+.header-rating > input {
+	display: none;
+}
+.header-rating > label:before {
+	margin: 0 5px 0 0;
+	font-size: 18px;
+	font-family: FontAwesome, sans-serif;
+	display: inline-block;
+	content: "\f005";
+}
+
+
+.header-rating > label {
+	color: #ddd;
+	float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.header-rating > input:not(:checked) ~ label:before,
+.header-rating:not(:checked) > label:before {
+	content: "\f006";
+}
+.header-rating > input:checked ~ label:before {
+	content: "\f005";
+}
+.header-rating > input:checked ~ label, /* show gold star when clicked */
+.header-rating:not(:checked) > label:hover, /* hover current star */
+.header-rating:not(:checked) > label:hover ~ label,
+.header-rating > input:not(:checked) ~ label:before,
+.header-rating:not(:checked) > label:before {
+	content: "\f006";
+	color: $color-pink;
+}
+
+
+
+.header-rating > input:checked + label:hover, /* hover current star when changing rating */
+.header-rating > input:checked ~ label:hover,
+.header-rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.header-rating > input:checked ~ label:hover ~ label,
+.header-rating > input:checked ~ label:before {
+	content: "\f005";
+	color: $color-pink;
+}
+
+
+
+

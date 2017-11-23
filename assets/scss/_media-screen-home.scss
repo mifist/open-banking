@@ -1,0 +1,256 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media screen and (max-width: 480px) {
+	
+}
+/* Small devices (phones, 768px and down) */
+@media screen and (max-width: 767px) {
+	h1 {
+		color: $color-purpl;
+		font-size: 42px;
+		line-height: 42px;
+		font-family: $fonts-montsB;
+	}
+	h2,
+	.block-title {
+		color: $color-purpl;
+		font-size: 42px;
+		line-height: 40px;
+		font-family: $fonts-montsB;
+		margin-bottom: 35px;
+	}
+	.title-desc {
+		margin-top: 35px;
+	}
+
+	/* Buttons */
+	.btn-login {
+		padding: 10px 25px;
+	}
+	.btn-find {
+		margin-bottom: 35px;
+	}
+	
+	/* Header */
+	header.home-top-header,
+	.home-top-header {
+		padding-top: 10px;
+	}
+	
+	/* NavBar */
+	.navbar-header {
+		float: none;
+		.navbar-right {
+			padding-right: 15px;
+		}
+	}
+	.navbar-header .navbar-right {
+		margin-right: 0;
+		padding-right: 7px !important;
+		padding-left: 7px;
+	}
+	.navbar-brand {
+		padding-left: 0;
+		
+	}
+	.navbar-toggle {
+		margin: 0;
+	}
+	
+	/* Main Block */
+	.home-main-block {
+		padding-top: 85px;
+		padding-bottom: 35px;
+		min-height: inherit;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.home-description {
+		position: relative;
+		top: 0;
+		margin-top: 0;
+	}
+	
+	/* News */
+	.news-wrap {
+		&:first-child {
+			padding-left: 15px;
+		}
+		&:last-child {
+			padding-right: 15px;
+		}
+		
+		.item-header {
+			height: auto;
+			position: relative;
+			
+			.item-header-img {
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: auto;
+					//transform: scale(1.1);
+				}
+			}
+			
+			
+		}
+	}
+	
+	/* Exploring */
+	.explor-right {
+		border-left: 15px solid #2a1e5c;
+		border-right: none;
+	}
+	/* Home description */
+	.home-description {
+		margin: 15px 0;
+	}
+	.home-desc-item {
+		
+		.item-content {
+			font-size: 18px;
+			font-family: $fonts-robotoR;
+			margin-top: 30px;
+			min-height: inherit;
+			.btn {
+				padding: 10px 40px;
+				display: block;
+				max-width: 160px;
+				margin: 35px auto 0 auto;
+			}
+		}
+		
+	}
+	
+	/* Slider */
+	.slider-thumb {
+		width: auto;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+	/* Buttons */
+	
+	.btn-find {
+		margin-bottom: 35px;
+	}
+	
+	/* Header */
+	header.home-top-header,
+	.home-top-header {
+		padding-top: 10px;
+	}
+	
+	/* Main Block */
+	.home-main-block {
+		padding-top: 85px;
+		padding-bottom: 35px;
+		min-height: inherit;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.home-description {
+		position: relative;
+		top: 0;
+		margin-top: 0;
+	}
+	
+	/* Home description */
+	.home-description {
+		margin: 15px 0;
+	}
+	.home-desc-item {
+		
+		.item-content {
+			font-size: 18px;
+			font-family: $fonts-robotoR;
+			margin-top: 30px;
+			min-height: inherit;
+			.btn {
+				padding: 10px 40px;
+				display: block;
+				max-width: 160px;
+				margin: 35px auto 0 auto;
+			}
+		}
+		
+	}
+	
+	/* Slider */
+	.slider-thumb {
+		width: auto;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+	}
+	
+	/* News */
+	.news-wrap {
+		&:first-child {
+			padding-left: 15px;
+		}
+		&:last-child {
+			padding-right: 15px;
+		}
+		
+		.item-header {
+			height: auto;
+			position: relative;
+			
+			.item-header-img {
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: auto;
+					//transform: scale(1.1);
+				}
+			}
+			
+			
+		}
+	}
+	
+	/* Exploring */
+	.explor-right {
+		border-left: 15px solid #2a1e5c;
+		border-right: none;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}

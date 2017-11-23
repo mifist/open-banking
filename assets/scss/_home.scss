@@ -1,0 +1,241 @@
+.home-main-block {
+	min-height: calc(100vh);
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 105px;
+	padding-bottom: 175px;
+	background: url("../images/head_back.png") no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.home-description {
+	position: relative;
+	margin-top: -157px;
+}
+.home-desc-wrap {
+	&:first-child {
+		background: $color-purpl;
+		.btn-white:hover {
+				color: $color-purpl;
+		}
+		
+	}
+	&:nth-child(2) {
+		background: $color-green;
+		.btn-white:hover {
+			color: $color-green;
+		}
+	}
+	&:last-child {
+		background: $color-pink;
+		.btn-white:hover {
+			color: $color-pink;
+		}
+	}
+}
+.title-desc {
+	
+}
+.home-desc-item {
+	color: $white;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 0 20px 20px;
+	.item-header {
+		min-height: 150px;
+		padding: 15px 0;
+		margin-left: -20px;
+		margin-right: -20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+	}
+	.home-desc-title {
+		color: $white;
+		font-family: $fonts-robotoB;
+		text-align: center;
+		font-size: 22px;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	.item-content {
+		font-size: 18px;
+		font-family: $fonts-robotoR;
+		margin-top: 30px;
+		min-height: 265px;
+		.btn {
+			padding: 10px 40px;
+			display: block;
+			max-width: 160px;
+			margin: 35px auto 0 auto;
+		}
+	}
+	.desc-img {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+/* Slider */
+#carousel-home {
+	margin-bottom: 30px;
+}
+.home-slider {
+	background: $white;
+	margin: 60px 0 35px 0;
+	padding: 20px 0;
+}
+.slider-thumb {
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+	width: 100%;
+}
+.carousel-inner {
+	p, span, b, strong, em, i {
+		font-size: 18px;
+		font-family: $fonts-robotoR;
+		color: #212121;
+	}
+}
+.carousel-indicators {
+	bottom: -35px;
+	margin: 0 auto;
+	display: block;
+	z-index: 10;
+	transform: translateX(-50%);
+	li {
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		border: 1px solid $color-purpl;
+		border-radius: 50%;
+		@include transition(all .3s);
+		&.active {
+			background-color: $color-purpl;
+			width: 21px;
+			height: 21px;
+		}
+	}
+}
+
+/* News */
+.news-section {
+	margin: 0 auto;
+}
+.news-wrap {
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}
+.news-item-wrap {
+	display: block;
+	.item-header {
+		height: 125px;
+		position: relative;
+		
+		.item-header-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				//transform: scale(1.1);
+			}
+		}
+		
+		
+	}
+	.item-container {
+		background: $white;
+		display: block;
+		padding: 25px 10px;
+		font-family: $fonts-robotoB;
+		font-weight: 600;
+		font-size: 22px;
+		color: $color-purpl;
+	}
+}
+
+/* Exploring */
+.explor-wrap {
+	border: 4px solid $color-purpl;
+	margin: 35px auto;
+	h5 {
+		margin-bottom: 15px;
+	}
+}
+.explor-right {
+	border-right: 15px solid $color-purpl;
+}
+.explor-left {
+	border-left: 15px solid $color-purpl;
+}
+.explor-title {
+	background: $color-purpl;
+	color: $white;
+	text-align: center;
+	padding: 15px 0;
+	margin: 0;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+.list-exp {
+	//padding-left: 20px;
+	margin-bottom: 15px;
+	li {
+		font-family: $fonts-robotoR;
+		color: $color-purpl;
+		margin-bottom: 5px;
+		font-size: 22px;
+		list-style: none;
+		position: relative;
+		i.fa, .fa {
+			position: absolute;
+			left: -40px;
+			top: 5px;
+			bottom: 0;
+			font-size: 22px;
+		}
+	}
+}
+
+/* More links */
+.more-links-wrap {
+	background: $white;
+	padding: 0 15px;
+	margin-bottom: 60px;
+	h5 {
+		margin-bottom: 25px;
+	}
+	h6 {
+		//margin-top: 0;
+	}
+	.btn {
+		margin-bottom: 15px;
+	}
+}
+.more-links-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
