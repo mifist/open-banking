@@ -1943,7 +1943,8 @@ fieldset.header-rating label {
     padding-top: 15px; }
   .result-title {
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    width: auto; }
   .navbar-brand img {
     width: 100%;
     max-width: 170px; }
