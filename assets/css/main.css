@@ -1031,21 +1031,20 @@ fieldset.header-rating label {
 #carousel-home {
   margin-bottom: 30px; }
   #carousel-home .slider-thumb {
-    max-width: 350px;
     width: 100%;
-    float: left;
+    clear: both;
     display: block; }
+    #carousel-home .slider-thumb img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      display: block;
+      margin: 0 0 0 auto; }
 
 .home-slider {
   background: #fff;
   margin: 60px 0 35px 0;
   padding: 20px 0; }
-
-.slider-thumb {
-  margin-left: auto;
-  margin-right: 0;
-  display: block;
-  width: 100%; }
 
 .carousel-inner p, .carousel-inner span, .carousel-inner b, .carousel-inner strong, .carousel-inner em, .carousel-inner i {
   font-size: 18px;
@@ -1261,7 +1260,8 @@ fieldset.header-rating label {
   position: relative;
   width: 100%;
   border: none;
-  float: none; }
+  float: none;
+  z-index: 90; }
   .sidebar .dropdown-menu li a {
     background: inherit; }
     .sidebar .dropdown-menu li a:hover, .sidebar .dropdown-menu li a:focus {
