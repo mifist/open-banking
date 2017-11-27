@@ -1207,6 +1207,7 @@ fieldset.header-rating label {
         position: relative;
         text-decoration: none;
         display: block;
+        background: transparent;
         -moz-transition: all 0.3s;
         -o-transition: all 0.3s;
         -webkit-transition: all 0.3s;
@@ -1263,9 +1264,13 @@ fieldset.header-rating label {
   float: none;
   z-index: 90; }
   .sidebar .dropdown-menu li a {
-    background: inherit; }
+    -moz-transition: all 0;
+    -o-transition: all 0;
+    -webkit-transition: all 0;
+    transition: all 0;
+    background: none; }
     .sidebar .dropdown-menu li a:hover, .sidebar .dropdown-menu li a:focus {
-      background: inherit; }
+      background: none; }
 
 .sidebar-title {
   font-size: 20px;
@@ -1921,6 +1926,8 @@ fieldset.header-rating label {
     margin: 0; }
   .sidebar .input-group-btn.open .dropdown-menu {
     display: block; }
+    .sidebar .input-group-btn.open .dropdown-menu li a {
+      background: none; }
   .sidebar .dropdown-menu {
     display: none; }
   .product-tabs .nav-tabs li.active a {
