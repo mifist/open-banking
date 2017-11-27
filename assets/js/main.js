@@ -48,5 +48,8 @@ $(document).ready(function(){
 		$(this).prev().toggle();
 		return false;
 	});
+	$('.carousel').carousel({
+		interval: 6000
+	})
 	
 });

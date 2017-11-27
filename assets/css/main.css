@@ -698,31 +698,16 @@ h4.footer-title,
 .social-links {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  display: block;
+  text-align: center; }
   .social-links li {
+    display: inline-block;
     color: #2a1e5c;
     list-style: none;
     margin-bottom: 15px;
     margin-right: 15px; }
+    .social-links li:last-child {
+      margin-right: 0; }
     .social-links li a {
       color: inherit;
       font-size: 16px;
@@ -1045,6 +1030,11 @@ fieldset.header-rating label {
 /* Slider */
 #carousel-home {
   margin-bottom: 30px; }
+  #carousel-home .slider-thumb {
+    max-width: 350px;
+    width: 100%;
+    float: left;
+    display: block; }
 
 .home-slider {
   background: #fff;
@@ -1060,7 +1050,9 @@ fieldset.header-rating label {
 .carousel-inner p, .carousel-inner span, .carousel-inner b, .carousel-inner strong, .carousel-inner em, .carousel-inner i {
   font-size: 18px;
   font-family: "RobotoRegular", sans-serif;
-  color: #212121; }
+  color: #212121;
+  width: 100%;
+  max-width: 785px; }
 
 .carousel-indicators {
   bottom: -35px;
