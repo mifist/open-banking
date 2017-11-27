@@ -73,8 +73,30 @@
 		}
 	}
 }
-.sidebar-filter {
-	
+.sidebar {
+	.input-group-btn {
+		display: block;
+		width: 100%;
+		clear: both;
+		height: auto;
+		min-height: 50px;
+	}
+	.dropdown-menu {
+		display: block;
+		position: relative;
+		width: 100%;
+		border: none;
+		float: none;
+		li {
+			a {
+				background: inherit;
+				&:hover,
+				&:focus{
+					background: inherit;
+				}
+			}
+		}
+	}
 }
 .sidebar-title {
 	font-size: 20px;

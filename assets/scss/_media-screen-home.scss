@@ -68,6 +68,12 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		img, .custom-3phones{
+		
+			margin: 0;
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 	.home-description {
 		position: relative;
@@ -143,7 +149,14 @@
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.home-main-block {
+		img, .custom-3phones{
+			
+			margin: 0;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
 	
 	/* Buttons */
 	

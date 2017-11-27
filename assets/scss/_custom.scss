@@ -17,16 +17,19 @@ body {
 	font-size: 16px;
 	font-family: $fonts-robotoR;
 }
+h1, h2, h3, h4, h5, h6 {
+	width: 100%;
+}
 h1 {
 	color: $color-purpl;
-	font-size: 68px;
+	font-size: 54px;
 	line-height: 60px;
 	font-family: $fonts-montsB;
 }
 h2,
 .block-title {
 	color: $color-purpl;
-	font-size: 68px;
+	font-size: 54px;
 	line-height: 60px;
 	font-family: $fonts-montsB;
 	margin-bottom: 35px;
@@ -60,10 +63,15 @@ h6 {
 	margin-bottom: 15px;
 }
 p {
+	word-break: normal;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	line-break: auto;
 	font-size: 18px;
 	line-height: 25px;
 	margin: 0 0 15px;
 	font-family: $fonts-robotoR;
+	width: 100%;
 }
 a {
 	color: $color-purpl;

@@ -13,9 +13,11 @@
 		line-height: inherit;
 		margin-right: 5px;
 	}
-	&:hover {
+	&:hover,
+	&:focus {
 		background: $color-pink;
 		color: $white;
+		outline: none;
 		.fa, i.fa, img.fa {
 			color: inherit;
 			font-size: inherit;
@@ -114,6 +116,63 @@
 	i.fa, .fa {
 		margin-right: 0;
 		margin-left: 5px;
+	}
+	&:hover,
+	&:focus {
+		outline: none;
+		padding: 5px 15px;
+		i.fa, .fa {
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+}
+.filter-btn.active {
+	background: $color-purpl;
+	a {
+		background: inherit;
+		&:after {
+			content: "\f00c";
+			font-family: FontAwesome, sans-serif;
+			color: $color-purpl;
+			font-size: 12px;
+			background: $white;
+			text-align: center;
+		}
+	}
+}
+.btn-more {
+	display: inline-block;
+	font-weight: bold;
+	font-family: $fonts-robotoB;
+	padding: 0 5px;
+	//text-decoration: none !important;
+	@include transition(all .3s);
+}
+.btn-dropdown.sidebar-title {
+	font-size: 20px;
+	line-height: 30px;
+	font-family: $fonts-robotoB;
+	margin: 0;
+	padding: 10px 20px;
+	display: block;
+	color: $color-purpl;
+	border: none;
+	width: 100%;
+	text-align: left;
+	background: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	float: none;
+	i, i.fa, .fa {
+		display: none;
+	}
+	&:hover,
+	&:focus {
+		background: transparent;
+		border-radius: 0;
+		outline: none;
+		box-shadow: none;
 	}
 }
 .result-dropdown {
