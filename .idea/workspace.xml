@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" afterPath="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/_search.scss" afterPath="$PROJECT_DIR$/assets/scss/_search.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,8 +81,8 @@
           <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="263">
-                  <caret line="77" column="64" lean-forward="false" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="64" />
+                <state relative-caret-position="195">
+                  <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
                   <folding>
                     <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -97,11 +96,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="_media-screen-search.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_media-screen-search.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/scss/_media-screen-search.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+                <state relative-caret-position="374">
+                  <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -132,7 +131,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_search.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_search.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/scss/_search.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="294">
@@ -227,10 +226,10 @@
         <option value="$PROJECT_DIR$/assets/scss/_home.scss" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" />
         <option value="$PROJECT_DIR$/assets/scss/_button.scss" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/assets/scss/_search.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" />
       </list>
     </option>
   </component>
@@ -419,12 +418,12 @@
       <updated>1511173154716</updated>
       <workItem from="1511173155892" duration="74373000" />
       <workItem from="1511769560120" duration="14911000" />
-      <workItem from="1511788893968" duration="565000" />
+      <workItem from="1511788893968" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89849000" />
+    <option name="totallyTimeSpent" value="90213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -819,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/_media-screen-search.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/_product.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -865,18 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="77" column="64" lean-forward="false" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="64" />
-          <folding>
-            <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -889,6 +868,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+          <folding>
+            <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#0;n#header#0;n#div#1;n#article#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/_media-screen-search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
           <folding />
         </state>
       </provider>
