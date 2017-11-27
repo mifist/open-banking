@@ -11,10 +11,14 @@
 	background: url("../images/head_back.png") no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
+	width: 100%;
 	
-	img {
+	img, .custom-3phones {
 		width: 100%;
 		height: auto;
+		max-width: 475px;
+		margin: 0 0 0 auto;
+		display: block;
 	}
 }
 .home-description {
@@ -33,6 +37,9 @@
 		background: $color-green;
 		.btn-white:hover {
 			color: $color-green;
+		}
+		.desc-img {
+			max-width: 126px;
 		}
 	}
 	&:last-child {
@@ -85,6 +92,8 @@
 		display: block;
 		margin: 0 auto;
 		text-align: center;
+		width: 100%;
+		max-width: 66px;
 	}
 }
 
