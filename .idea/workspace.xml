@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0e1225d-282e-44cd-8b67-6d84d2baeed6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" afterPath="$PROJECT_DIR$/assets/scss/_media-screen-search.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +99,8 @@
           <file leaf-file-name="_media-screen-search.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/scss/_media-screen-search.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+                <state relative-caret-position="374">
+                  <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -417,12 +418,12 @@
       <updated>1511173154716</updated>
       <workItem from="1511173155892" duration="74373000" />
       <workItem from="1511769560120" duration="14911000" />
-      <workItem from="1511788893968" duration="791000" />
+      <workItem from="1511788893968" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90075000" />
+    <option name="totallyTimeSpent" value="90213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -885,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/_media-screen-search.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+        <state relative-caret-position="374">
+          <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
           <folding />
         </state>
       </provider>

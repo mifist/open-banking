@@ -2093,6 +2093,7 @@ fieldset.header-rating label {
   .result-item img,
   .result-thumb,
   .single-thumb {
+    max-width: 200px;
     width: auto;
     padding-bottom: 15px; }
   .result-item:after {
