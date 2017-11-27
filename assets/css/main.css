@@ -965,7 +965,8 @@ fieldset.header-rating label {
     width: 100%;
     height: auto;
     max-width: 475px;
-    margin: 0 0 0 auto;
+    margin: 0;
+    margin-left: auto;
     display: block; }
 
 .home-description {
@@ -1753,6 +1754,10 @@ fieldset.header-rating label {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+    .home-main-block img, .home-main-block .custom-3phones {
+      margin: 0;
+      margin-right: auto;
+      margin-left: auto; }
   .home-description {
     position: relative;
     top: 0;
@@ -1801,6 +1806,10 @@ fieldset.header-rating label {
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .home-main-block img, .home-main-block .custom-3phones {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto; }
   /* Buttons */
   .btn-find {
     margin-bottom: 35px; }

@@ -12,12 +12,12 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	
 	img, .custom-3phones {
 		width: 100%;
 		height: auto;
 		max-width: 475px;
-		margin: 0 0 0 auto;
+		margin: 0;
+		margin-left: auto;
 		display: block;
 	}
 }
