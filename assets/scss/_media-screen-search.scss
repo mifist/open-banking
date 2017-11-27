@@ -46,6 +46,11 @@
 		.input-group-btn.open {
 			.dropdown-menu {
 				display: block;
+				li {
+					a {
+						background: none;
+					}
+				}
 			}
 		}
 		.dropdown-menu {
