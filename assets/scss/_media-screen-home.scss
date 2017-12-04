@@ -51,7 +51,9 @@
 	}
 	.navbar-brand {
 		padding-left: 0;
-		
+		       img {
+						 max-width: 130px;
+					 }
 	}
 	.navbar-toggle {
 		margin: 0;

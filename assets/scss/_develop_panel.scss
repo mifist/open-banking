@@ -24,9 +24,35 @@
 .dev-name-wrap {
   flex-direction: column;
 }
-
+.photo-wrap {
+  position: relative;
+  .company-item.file {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50%;
+    bottom: 0;
+    z-index: 20;
+    max-width: 176px;
+    width: 100%;
+    max-height: 176px;
+    margin: 0 auto;
+  }
+}
 .profile-details.edit-details {
-
+   .photo-wrap {
+     .company-item.file {
+       display: block;
+       .prodFile {
+         border: 2px dashed #ffffff;
+         color: #ffffff;
+       }
+     }
+     img {
+       opacity: .5;
+     }
+   }
 }
 
 /* Company Details */
