@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Admin Panel</title>
+	
+	<link type="image/png" href="favicon.ico" rel="icon">
+	<!-- Bootstrap -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	
+	
+	
+	<!-- Custom style -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- Start Header -->
+<header class="header-top profile">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar">
+					
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-right">
+							<a href="#" class="profile-login">
+								<img class="admin-img" src="assets/images/profile/face.jpg" alt="Profile thumb">
+								<h3 class="admin-title">John Doe</h3>
+							</a>
+						</div>
+						<a class="navbar-brand" href="#">
+							<img src="assets/images/Logo.png" title="Open Banking Apps" alt="Open Banking Apps">
+						</a>
+					</div>
+				
+				
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="navbar-header1">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="search.html">Search</a></li>
+			<li><a href="product.html">Product</a></li>
+			<li><a href="search-not-found.html">Search - Not Found</a></li>
+			<li><a href="admin-panel.html">Admin Panel</a></li>
+			<li><a href="develop-panel.html">Developer Panel</a></li>
+		</ul>
+	</div><!-- /.navbar-collapse -->
+</header><!-- End Header -->
+
+
+<div class="head-admin-page container-main">
+	<div class="profile-background"></div>
+	<div class="profile-details">
+		<div class="container">
+			<div class="row details-wrap">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+					<div class="photo-wrap">
+						<img src="assets/images/profile/face.jpg" alt="Profile Photo" class="profile-photo">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 user-name">
+					<form action="">
+						<input class="profile-name" type="text" value="John Doe">
+						<span class="message-updated load">Updating</span>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+					<h6>Email</h6>
+					<form action="">
+						<input class="profile-mail" type="email" value="sample@email.com">
+						<span class="message-updated">Updated</span>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+					<h6>Location</h6>
+					<div class="input-group-btn profile">
+						<button type="button" class="btn btn-dropdown dropdown-toggle profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							United Kindom
+							<img class="helps-img" src="assets/images/flag.jpg" alt="United Kindom">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</button>
+						<ul class="dropdown-menu result-dropdown">
+							<li>
+								<a href="#">Francia <img class="helps-img" src="assets/images/flag.jpg"
+								                   alt="United Kindom"></a>
+							</li>
+							<li>
+								<a href="#">United Kindom <img class="helps-img" src="assets/images/flag.jpg"
+								                               alt="United Kindom"></a>
+							</li>
+							<li>
+								<a href="#">Italy <img class="helps-img" src="assets/images/flag.jpg"
+								                   alt="United Kindom"></a>
+							</li>
+							<li>
+								<a href="#">Austria <img class="helps-img" src="assets/images/flag.jpg"
+								                   alt="United Kindom"></a>
+							</li>
+						</ul>
+					</div><!-- /btn-group -->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+					<h6>Primary Bank</h6>
+					<div class="input-group-btn profile">
+						<button type="button" class="btn btn-dropdown dropdown-toggle profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Personal Bank
+							<img class="helps-img" src="assets/images/profile/bank.jpg" alt="Personal Bank">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</button>
+						<ul class="dropdown-menu result-dropdown">
+							<li>
+								<a href="#">Personal Bank <img class="helps-img" src="assets/images/profile/bank.jpg"
+								                              alt="Personal Bank"></a>
+							</li>
+							<li>
+								<a href="#">Alpha Bank <img class="helps-img" src="assets/images/profile/bank.jpg"
+								                               alt="Personal Bank"></a>
+							</li>
+							<li>
+								<a href="#">BankID <img class="helps-img" src="assets/images/profile/bank.jpg"
+								                       alt="Personal Bank"></a>
+							</li>
+							<li>
+								<a href="#">Milenium Bank <img class="helps-img" src="assets/images/profile/bank.jpg"
+								                         alt="Personal Bank"></a>
+							</li>
+						</ul>
+					</div><!-- /btn-group -->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 edit-profile">
+					<a href="#" class="btn btn-edit">Edit Profile</a>
+					<a href="#" class="btn btn-save">Confirm</a>
+					<a href="#" class="btn btn-cancel">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Start Reviews -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h5 class="profile-title">User Submitted Reviews</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+		
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+		
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+		
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+		
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+			<div class="reviews-wrap">
+				<div class="reviews-header">
+					<div class="reviews-thumb">
+						<img src="assets/images/profile.png" alt="Profile Image">
+					</div>
+					<div class="reviews-details">
+						<h5 class="reviews-title">Sample product name</h5>
+						<h6 class="date">11/9/2017</h6>
+						<fieldset class="header-rating">
+							<input type="radio" id="star5" name="rating1" value="5" />
+							<label class="full" for="star5" title="Awesome - 5 stars"></label>
+							
+							<input type="radio" id="star4" name="rating1" value="4" />
+							<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							
+							<input type="radio" id="star3" name="rating1" value="3" />
+							<label class="full" for="star3" title="Meh - 3 stars"></label>
+							
+							<input type="radio" id="star2" name="rating1" value="2" />
+							<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							
+							<input type="radio" id="star1" name="rating1" value="1" />
+							<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="reviews-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque deleniti earum et natus nobis temporibus! Animi facilis in inventore necessitatibus...</p>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div> <!-- End Reviews -->
+
+<!-- Start Tabs -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h5 class="profile-title">Apps List</h5>
+		</div>
+	</div>
+	<div class="row apps-tabs">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#saved" aria-controls="home" role="tab" data-toggle="tab">Saved</a>
+				</li>
+				<li role="presentation">
+					<a href="#viewed" aria-controls="profile" role="tab" data-toggle="tab">Viewed</a>
+				</li>
+				<li role="presentation">
+					<a href="#shared" aria-controls="profile" role="tab" data-toggle="tab">Shared</a>
+				</li>
+			</ul>
+			
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="saved">
+					<div class="row apps-item">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="apps-header">
+								<div class="apps-thumb">
+									<img src="assets/images/profile.png" alt="Profile Image">
+								</div>
+								<div class="apps-details">
+									<div class="apps-control">
+										<a href="#" class="btn btn-share"></a>
+										<a href="#" class="btn btn-close"></a>
+									</div>
+									<h5 class="apps-title">Sample product name</h5>
+									<fieldset class="header-rating">
+										<input type="radio" id="star5" name="rating1" value="5" />
+										<label class="full" for="star5" title="Awesome - 5 stars"></label>
+										
+										<input type="radio" id="star4" name="rating1" value="4" />
+										<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+										
+										<input type="radio" id="star3" name="rating1" value="3" />
+										<label class="full" for="star3" title="Meh - 3 stars"></label>
+										
+										<input type="radio" id="star2" name="rating1" value="2" />
+										<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+										
+										<input type="radio" id="star1" name="rating1" value="1" />
+										<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+						</div>
+					</div>
+					<div class="row apps-item">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="apps-header">
+								<div class="apps-thumb">
+									<img src="assets/images/profile.png" alt="Profile Image">
+								</div>
+								<div class="apps-details">
+									<div class="apps-control">
+										<a href="#" class="btn btn-share"></a>
+										<a href="#" class="btn btn-close"></a>
+									</div>
+									<h5 class="apps-title">Sample product name</h5>
+									<fieldset class="header-rating">
+										<input type="radio" id="star5" name="rating1" value="5" />
+										<label class="full" for="star5" title="Awesome - 5 stars"></label>
+										
+										<input type="radio" id="star4" name="rating1" value="4" />
+										<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+										
+										<input type="radio" id="star3" name="rating1" value="3" />
+										<label class="full" for="star3" title="Meh - 3 stars"></label>
+										
+										<input type="radio" id="star2" name="rating1" value="2" />
+										<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+										
+										<input type="radio" id="star1" name="rating1" value="1" />
+										<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+						</div>
+					</div>
+					<div class="row apps-item">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="apps-header">
+								<div class="apps-thumb">
+									<img src="assets/images/profile.png" alt="Profile Image">
+								</div>
+								<div class="apps-details">
+									<div class="apps-control">
+										<a href="#" class="btn btn-share"></a>
+										<a href="#" class="btn btn-close"></a>
+									</div>
+									<h5 class="apps-title">Sample product name</h5>
+									<fieldset class="header-rating">
+										<input type="radio" id="star5" name="rating1" value="5" />
+										<label class="full" for="star5" title="Awesome - 5 stars"></label>
+										
+										<input type="radio" id="star4" name="rating1" value="4" />
+										<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+										
+										<input type="radio" id="star3" name="rating1" value="3" />
+										<label class="full" for="star3" title="Meh - 3 stars"></label>
+										
+										<input type="radio" id="star2" name="rating1" value="2" />
+										<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+										
+										<input type="radio" id="star1" name="rating1" value="1" />
+										<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+						</div>
+					</div>
+					<div class="row apps-item">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="apps-header">
+								<div class="apps-thumb">
+									<img src="assets/images/profile.png" alt="Profile Image">
+								</div>
+								<div class="apps-details">
+									<div class="apps-control">
+										<a href="#" class="btn btn-share"></a>
+										<a href="#" class="btn btn-close"></a>
+									</div>
+									<h5 class="apps-title">Sample product name</h5>
+									<fieldset class="header-rating">
+										<input type="radio" id="star5" name="rating1" value="5" />
+										<label class="full" for="star5" title="Awesome - 5 stars"></label>
+										
+										<input type="radio" id="star4" name="rating1" value="4" />
+										<label class="full" for="star4" title="Pretty good - 4 stars"></label>
+										
+										<input type="radio" id="star3" name="rating1" value="3" />
+										<label class="full" for="star3" title="Meh - 3 stars"></label>
+										
+										<input type="radio" id="star2" name="rating1" value="2" />
+										<label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+										
+										<input type="radio" id="star1" name="rating1" value="1" />
+										<label class="full" for="star1" title="Sucks big time - 1 star"></label>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="viewed">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="shared">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, culpa cumque doloremque esse expedita facere impedit ipsa, ipsam labore necessitatibus numquam provident repellat rerum sed ut voluptatibus! Distinctio, explicabo!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- End Tabs -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/bootstrap/js/jquery.matchHeight.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/ae7c834c9a.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Slick Slider -->
+<script src="assets/js/main.js"></script>
+<!-- <script src="assets/bootstrap/js/npm.js"></script>-->
+</body>
+</html>

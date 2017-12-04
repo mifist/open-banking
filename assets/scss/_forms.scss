@@ -141,4 +141,81 @@ fieldset.header-rating label {
 
 
 
+/* Application Details */
+.application-input {
+	color: $color-purpl;
+	padding: 10px 20px;
+	background: $white;
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid rgba(42, 30, 92, 0.3);
+	outline: none;
+	box-shadow: none;
+	&:hover,
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 2px rgba(42, 30, 92, 0.1);
+	}
+}
+input[type=file].input-drag {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+}
 
+input[type=file].input-drag.big {
+	margin: 0;
+	
+}
+.prodFile {
+	position: relative;
+	width: 100%;
+	border: 1px dashed #8F9CA4;
+	color: #8F9CA4;
+	min-height: 150px;
+	max-width: 150px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	.fa, i.fa {
+		font-size: 40px;
+		color: inherit;
+	}
+	.placeholder {
+		font-size: 18px;
+		line-height: 21px;
+		color: inherit;
+		font-family: $fonts-robotoB;
+	}
+}
+.prodFile.big {
+	margin: 0;
+	width: 100%;
+	max-width: inherit;
+	padding: 25px;
+	border-radius: 0;
+	.btn-drag {
+		margin-top: 20px;
+	}
+}
+.company-item.file {
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: center;
+	.btn-drag {
+		margin: 0;
+	}
+}

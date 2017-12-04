@@ -112,7 +112,7 @@
 	float: right;
 	margin-bottom: 10px;
 	border-radius: 5px !important;
-	padding: 5px 15px;
+	padding: 6px 15px;
 	i.fa, .fa {
 		margin-right: 0;
 		margin-left: 5px;
@@ -120,7 +120,7 @@
 	&:hover,
 	&:focus {
 		outline: none;
-		padding: 5px 15px;
+		padding: 6px 15px;
 		i.fa, .fa {
 			margin-right: 0;
 			margin-left: 5px;
@@ -138,6 +138,10 @@
 			font-size: 12px;
 			background: $white;
 			text-align: center;
+		}
+		i.fa, .fa {
+			color: $white;
+			filter: brightness(10);
 		}
 	}
 }
@@ -195,7 +199,23 @@
 		}
 	}
 }
-
+.btn-exp {
+	color: $color-purpl;
+	border: 1px solid $color-purpl;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	i, .fa, i.fa, img.fa {
+		@include transition(all .3s);
+		font-size: 22px;
+	}
+	&:hover {
+		background: $color-purpl;
+		i, .fa, i.fa {
+			color: $color-purpl;
+			font-size: 22px;
+		}
+	}
+}
 /* Pagination */
 .result-pagination {
 	margin: 40px 0;
@@ -262,7 +282,8 @@
 	}
 }
 .btn-share,
-.btn-follow {
+.btn-follow,
+.btn-close {
 	font-family: FontAwesome, sans-serif;
 	color: $white;
 	background: $color-purpl;
@@ -297,6 +318,343 @@
 	&:hover {
 		&:before {
 			content: "\f02e";
+		}
+	}
+}
+
+.btn-close {
+	&:before {
+		content: "\f00d";
+		font-family: FontAwesome, sans-serif;
+	}
+}
+
+/* Profile buttons  */
+.btn-save,
+.btn-cancel,
+.btn-edit {
+	border: none;
+	display: block;
+	&:before{
+		content: "\f044";
+		color: inherit;
+		font-family: FontAwesome, sans-serif;
+		font-size: inherit;
+		position: relative;
+	}
+	&-company {
+		border: none;
+		display: block;
+		width: 100%;
+		&:before{
+			content: "\f044";
+			color: inherit;
+			font-family: FontAwesome, sans-serif;
+			font-size: inherit;
+			position: relative;
+		}
+	}
+}
+.btn-save,
+.btn-cancel,
+.btn-edit {
+	padding: 5px 15px;
+	display: inline-block;
+	float: right;
+	margin-bottom: 5px;
+	&.hide {
+		display: none;
+	}
+	&.shows {
+		display: block;
+	}
+	&-company {
+		font-size: 16px;
+		padding: 5px;
+		display: inline-block;
+		float: right;
+		margin-bottom: 5px;
+		&.hide {
+			display: none;
+		}
+		&.shows {
+			display: block;
+		}
+	}
+}
+.btn-save,
+.btn-cancel {
+	display: none;
+	&-company {
+		display: none;
+	}
+}
+.btn-edit {
+	margin-bottom: 35px;
+	&:before{
+		content: "\f044";
+		margin-right: 5px;
+	}
+	&-company {
+		font-size: 18px;
+		width: auto;
+		padding: 5px 10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		&:before{
+			content: "\f044";
+			margin: 0;
+		}
+	}
+}
+.btn-save {
+	color: $color-green;
+	font-family:$fonts-robotoR;
+	font-size: 18px;
+	&:before{
+		content: "\f00c";
+		margin-right: 5px;
+	}
+	&:hover {
+		background: $color-green;
+	}
+	&-company {
+		color: $color-green;
+		font-family:$fonts-robotoR;
+		font-size: 16px;
+		&:before{
+			content: "\f00c";
+			margin-right: 5px;
+		}
+		&:hover {
+			background: $color-green;
+		}
+	}
+}
+.btn-cancel {
+	&:before{
+		content: "\f00d";
+		margin-right: 5px;
+	}
+	&-company {
+		&:before{
+			content: "\f00d";
+			margin-right: 5px;
+		}
+	}
+}
+
+
+.profile-dropdown {
+	outline: none;
+	border: none;
+	color: $color-purpl;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	pointer-events: none;
+	box-shadow: none;
+	padding: 0;
+	.fa {
+		display: none;
+		position: absolute;
+		bottom: -70%;
+		left: 0;
+		right: 0;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+	
+		background: transparent;
+		color: $color-purpl;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+.input-group-btn.profile {
+	display: block;
+	width: 100%;
+	&.open {
+		color: $color-purpl;
+		.dropdown-menu {
+			top: 4.8em;
+			border-radius: 0;
+			border: none;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			color: $color-purpl;
+			left: 0;
+			right: 0;
+			a, li {
+				color: inherit;
+				&:hover {
+					background: transparent;
+					color: $color-pink;
+				}
+			}
+			a {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: space-between;
+				clear: both;
+				padding: 5px 15px;
+			}
+		}
+		
+		.profile-dropdown {
+			.fa {
+				visibility: visible;
+			}
+		}
+	}
+	.helps-img {
+		//float: right;
+	//	margin-left: 15px;
+	}
+}
+
+
+.social-choice {
+	display: inline-block;
+	width: auto;
+	.btn-dropdown {
+		display: inline-block;
+		border-radius: 0 !important;
+		border: 1px solid $color-purpl;
+		color: $color-purpl;
+		margin-right: 15px !important;
+		.fa, i, img.fa {
+			margin: 0;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+			background: $color-purpl;
+			.fa, i, img.fa {
+				margin: 0;
+			}
+		}
+	}
+	.dropdown-menu {
+		min-width: 45px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		top: 80%;
+		li {
+			a {
+				cursor: pointer;
+				padding: 10px;
+				background: transparent;
+				@include transition(all .3s);
+				&:hover {
+					background: $color-purpl;
+					color: $white;
+				}
+			}
+		}
+	}
+	&.shows {
+		display: inline-block;
+	}
+}
+.table-dropdown {
+	border: 1px solid $white;
+	color: $color-purpl;
+	border-radius: 10px;
+	background: $white;
+	padding: 5px 10px;
+	font-size: 16px;
+	&:hover,
+	&:focus,
+	&:active {
+		border: 1px solid $white;
+		color: $white;
+		background: $color-purpl;
+		outline: none;
+	}
+}
+
+.btn-appl-list,
+.btn-drag,
+.btn-primary {
+	color: $white;
+	background: $color-purpl;
+	border: 2px solid $color-purpl;
+	margin-bottom: 35px;
+	min-width: 200px;
+	width: 100%;
+	max-width: 240px;
+	padding: 5px 30px;
+	&:before {
+		content: "\f067";
+		font-family: FontAwesome, sans-serif;
+		margin-right: 20px;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		background: $white;
+		color: $color-purpl;
+		outline: none;
+	}
+}
+.btn-drag,
+.btn-primary {
+	width: auto;
+	min-width: inherit;
+	max-width: inherit;
+	margin: 0 auto;
+	&:before {
+		display: none;
+	}
+}
+
+.modal-down {
+	border: 1px solid rgba(42, 30, 92, 0.3);
+	color: $color-purpl;
+	background: $white;
+	padding: 8px 30px;
+	width: 100%;
+	text-align: left;
+	.fa, i.fa, span {
+		float: right;
+		font-size: inherit;
+		color: inherit;
+		margin: 0;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+		background: $color-purpl;
+		.fa, i.fa, span {
+			margin: 0;
+		}
+	}
+	
+	&+ .dropdown-menu {
+		color: $color-purpl;
+		width: 100%;
+		font-size: 18px;
+		li {
+			color: inherit;
+			font-size:inherit;
+			a {
+				color: inherit;
+				font-size:inherit;
+				&:hover,
+				&:focus {
+					color: $white;
+					background: $color-purpl;
+				}
+			}
 		}
 	}
 }

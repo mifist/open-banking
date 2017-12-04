@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Developer Panel</title>
+
+    <link type="image/png" href="favicon.ico" rel="icon">
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+    <!-- Custom style -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Start Header -->
+<header class="header-top profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-header1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-right">
+                            <a href="#" class="profile-login">
+                                <img class="admin-img" src="assets/images/profile/face.jpg" alt="Profile thumb">
+                                <h3 class="admin-title">John Doe</h3>
+                            </a>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/Logo.png" title="Open Banking Apps" alt="Open Banking Apps">
+                        </a>
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-header1">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="search-not-found.html">Search - Not Found</a></li>
+            <li><a href="admin-panel.html">Admin Panel</a></li>
+            <li><a href="develop-panel.html">Developer Panel</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</header><!-- End Header -->
+
+
+<div class="head-admin-page container-main">
+    <div class="profile-background"></div>
+    <div class="profile-details">
+        <div class="container">
+            <div class="row details-wrap">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+                    <div class="photo-wrap">
+                        <img src="assets/images/profile/face.jpg" alt="Profile Photo" class="profile-photo">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 dev-name-wrap">
+                    <h6>User Name</h6>
+                    <form action="">
+                        <input class="developer-name" type="text" value="John Doe">
+                        <span class="message-updated load">Updating</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+                    <h6>Company Name</h6>
+                    <form action="">
+                        <input class="company-name" type="text" value="MilanD Inc.">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+                    <h6>Private Email</h6>
+                    <form action="">
+                        <input class="profile-mail" type="email" value="sample@email.com">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 profile-item">
+                    <h6>Location</h6>
+                    <div class="input-group-btn profile">
+                        <button type="button" class="btn btn-dropdown dropdown-toggle profile-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            United Kindom
+                            <img class="helps-img" src="assets/images/flag.jpg" alt="United Kindom">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu result-dropdown">
+                            <li>
+                                <a href="#">Francia <img class="helps-img" src="assets/images/flag.jpg"
+                                                         alt="United Kindom"></a>
+                            </li>
+                            <li>
+                                <a href="#">United Kindom <img class="helps-img" src="assets/images/flag.jpg"
+                                                               alt="United Kindom"></a>
+                            </li>
+                            <li>
+                                <a href="#">Italy <img class="helps-img" src="assets/images/flag.jpg"
+                                                       alt="United Kindom"></a>
+                            </li>
+                            <li>
+                                <a href="#">Austria <img class="helps-img" src="assets/images/flag.jpg"
+                                                         alt="United Kindom"></a>
+                            </li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 edit-profile">
+                    <a href="#" class="btn btn-edit">Edit Profile</a>
+                    <a href="#" class="btn btn-save">Confirm</a>
+                    <a href="#" class="btn btn-cancel">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Reviews -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <h5 class="profile-title">Company Details</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row company-wrap">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-1 edit-company-control">
+                    <a href="#" class="btn btn-edit-company"></a>
+                    <a href="#" class="btn btn-save-company">Confirm</a>
+                    <a href="#" class="btn btn-cancel-company">Cancel</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 company-item">
+                    <h6>Company Registration</h6>
+                    <form action="">
+                        <input class="company-input" type="text" value="GB123456789">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 company-item">
+                    <h6>FCA registration number</h6>
+                    <form action="">
+                        <input class="company-input" type="password" value="**************">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 company-item">
+                    <h6>Privacy Policy link</h6>
+                    <form class="link" action="">
+                        <input class="company-input" type="url" value="https://somelink.com"
+                               placeholder="Enter Privacy Policy Link">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                    <a href="https://somelink.com" class="shows company-link">View Privacy Policy</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 company-item">
+                    <h6>Terms of Use Links</h6>
+                    <form class="link" action="">
+                        <input class="company-input" type="url" value="https://somelink.com"
+                               placeholder="Enter Terms of Use Link">
+                        <span class="message-updated">Updated</span>
+                    </form>
+                    <a href="https://somelink.com" class="shows company-link">View Terms of Use</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 company-item">
+                    <h6>Company public email</h6>
+                    <form action="">
+                        <input class="company-input" type="email" value="sample@email.com">
+                        <span class="message-updated load">Updating</span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9 company-item">
+                    <h6>Company social media links</h6>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                            <ul class="social-links profile">
+                                <li><a class="fa fa-linkedin" aria-hidden="true" href="#"></a></li>
+                                <li><a class="fa fa-facebook" aria-hidden="true" href="#"></a></li>
+                                <li> <!-- start - or like this -->
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </li><!-- end - or like this -->
+                                <li><a class="fa fa-github" aria-hidden="true" href="#"></a></li>
+                                <li><a class="fa fa-twitter" aria-hidden="true" href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                            <form class="add-social" action="">
+                                <div class="input-group-btn social-choice hide">
+                                    <button type="button" class="btn btn-dropdown dropdown-toggle"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="fa fa-linkedin" aria-hidden="true" href="#"></a></li>
+                                        <li><a class="fa fa-facebook" aria-hidden="true" href="#"></a></li>
+                                        <li> <!-- start - or like this -->
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                        </li><!-- end - or like this -->
+                                        <li><a class="fa fa-github" aria-hidden="true" href="#"></a></li>
+                                        <li><a class="fa fa-twitter" aria-hidden="true" href="#"></a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <input class="company-input media-link hide" type="url" value=""
+                                       placeholder="Enter social media link">
+                                <a href="" class="media-link-span hide"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                <span class="message-updated">Updated</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End Reviews -->
+
+<!-- Start Tabs -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <h5 class="profile-title">Application Analytics</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row app-analytics">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-table Table">
+
+
+            <div class="Table-row Table-header">
+                <div class="Table-row-item number-col u-Flex-grow0">№</div>
+                <div class="Table-row-item u-Flex-grow4">Product Name</div>
+                <div class="Table-row-item">Raiting</div>
+                <div class="Table-row-item ">Reviews</div>
+                <div class="Table-row-item">Views</div>
+                <div class="Table-row-item">Share</div>
+                <div class="Table-row-item">Saves</div>
+                <div class="Table-row-item drop-col u-Flex-grow2">In last
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle table-dropdown" type="button" id="prodDays"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            30 days
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="prodDays">
+                            <li><a href="#">30 days</a></li>
+                            <li><a href="#">20 days</a></li>
+                            <li><a href="#">10 days</a></li>
+                            <li><a href="#">1 day</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Table-row">
+                <div class="Table-row-item number-col u-Flex-grow0">1</div>
+                <div class="Table-row-item u-Flex-grow4">
+                    <img class="table-img" src="assets/images/search/cmark1.png"
+                         alt="Sample Business Product Name">
+                    <a href="#" class="table-prod-name">Sample Business Product</a>
+                </div>
+                <div class="Table-row-item">
+                    4.25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item" data-header="Views">
+                    25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">
+                    13 <i class="fa fa-caret-down item-down" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item u-Flex-grow2"></div>
+            </div>
+            <div class="Table-row">
+                <div class="Table-row-item number-col u-Flex-grow0">2</div>
+                <div class="Table-row-item u-Flex-grow4">
+                    <img class="table-img" src="assets/images/search/cmark1.png"
+                         alt="Sample Business Product Name">
+                    <a href="#" class="table-prod-name">Sample Business Product</a>
+                </div>
+                <div class="Table-row-item">
+                    4.25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item" data-header="Views">
+                    25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">
+                    13 <i class="fa fa-caret-down item-down" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item u-Flex-grow2"></div>
+            </div>
+            <div class="Table-row">
+                <div class="Table-row-item number-col u-Flex-grow0">3</div>
+                <div class="Table-row-item u-Flex-grow4">
+                    <img class="table-img" src="assets/images/search/cmark1.png"
+                         alt="Sample Business Product Name">
+                    <a href="#" class="table-prod-name">Sample Business Product</a>
+                </div>
+                <div class="Table-row-item">
+                    4.25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item" data-header="Views">
+                    25 <i class="fa fa-caret-up item-up" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">
+                    13 <i class="fa fa-caret-down item-down" aria-hidden="true"></i>
+                </div>
+                <div class="Table-row-item">18 -</div>
+                <div class="Table-row-item u-Flex-grow2"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <button type="button" class="btn btn-appl-list" data-toggle="modal"
+                        data-target=".add-application-to-list">
+                    Add Application
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Large modal -->
+    <div class="modal fade add-application-to-list" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel">Application Details</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="row" method="POST">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                                            <label for="prodName" class="h6">Product Name</label>
+                                            <input class="application-input" id="prodName" type="text" value=""
+                                                   placeholder="Enter Product Name here">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                                            <h6 class="h6">Product Category</h6>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle modal-down" type="button"
+                                                        id="prodCat" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="true">
+                                                    Category
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="prodCat">
+                                                    <li><a href="#">Category 1</a></li>
+                                                    <li><a href="#">Category 2</a></li>
+                                                    <li><a href="#">Category 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                                            <h6 class="h6">Product Feature</h6>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle modal-down" type="button"
+                                                        id="prodFeat" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="true">
+                                                    Feature
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="prodFeat">
+                                                    <li><a href="#">Feature 1</a></li>
+                                                    <li><a href="#">Feature 2</a></li>
+                                                    <li><a href="#">Feature 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item file">
+                                            <label for="input-drag" class="h6">Product Profile Photo</label>
+                                            <div class="prodFile">
+                                                <input class="application-input input-drag" id="input-drag"
+                                                       type="file" multiple>
+                                                <span class="placeholder">Drag and drop files here!</span>
+                                            </div>
+                                            <button type="button" class="btn btn-drag">Browse Files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item ">
+                                    <label for="input-drag2" class="h6">Add Product Images</label>
+                                    <div class="prodFile big">
+                                        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                                        <input class="application-input input-drag " id="input-drag2"
+                                               type="file" multiple>
+                                        <span class="placeholder">Drag and drop files here <br>or</span>
+                                        <button type="button" class="btn btn-drag">Browse Files</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                                    <label for="prodDesc" class="h6">Add Product Description</label>
+                                    <textarea name="prodDesc" id="prodDesc" class="application-input"
+                                              rows="3"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                                    <label for="prodDet" class="h6">Product Details</label>
+                                    <textarea name="prodDet" id="prodDet" class="application-input" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End Tabs -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/bootstrap/js/jquery.matchHeight.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/ae7c834c9a.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Slick Slider -->
+<script src="assets/js/main.js"></script>
+<!-- <script src="assets/bootstrap/js/npm.js"></script>-->
+</body>
+</html>

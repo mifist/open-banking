@@ -1,0 +1,263 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (phones, 768px and down) */
+@media screen and (max-width: 767px) {
+	
+	/* Head Profile */
+	.profile-photo {
+		top: -16vw;
+		margin: 0 auto;
+	}
+	.profile-item,
+	.company-item {
+		margin-bottom: 20px;
+	}
+	.user-name,
+	.dev-name-wrap {
+		&:before {
+			content: '';
+			border-left: 1px solid rgba(42, 30, 92, .2);
+			position: absolute;
+			top: 5px;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	.details-wrap {
+		h6 {
+			margin-bottom: 5px;
+		}
+	}
+	.edit-profile {
+		position: relative;
+		top: 0;
+		right: 0;
+		text-align: right;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		z-index: 300;
+	}
+	.photo-wrap {
+		max-height: 100px;
+	}
+	.profile-details {
+		h5 {
+			margin: 15px 0 25px 0;
+			text-align: center;
+		}
+	}
+	.apps-control {
+		.btn-share,
+		.btn-close {
+			right: 0;
+		}
+	}
+	
+	/* Company Details */
+	.edit-company-control {
+		position: relative;
+	}
+	
+	
+	
+	/* Modal */
+	.company-item.file {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.app-analytics {
+	
+		overflow-y: hidden;
+		overflow-x: scroll;
+		/* Scroll on BODY */
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+		  border-radius: 10px;
+			background-color: transparent;
+		}
+		
+		&::-webkit-scrollbar {
+			width: 2px;
+			background-color: transparent;
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+			background-color: $color-pink;
+			font-family: "Open Sans", sans-serif;
+		}
+	}
+	.Table {
+		font-size: 12px !important;
+		font-family: $fonts-robotoR !important;
+		min-width: 725px;
+		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* Head Profile */
+	.profile-photo {
+		top: -30vw;
+		margin: 0 auto;
+	}
+	.reviews-details,
+	.apps-details {
+		margin-top: 10px;
+		.header-rating {
+			margin: 0 auto;
+		}
+	}
+	.reviews-header,
+	.apps-header {
+		flex-direction: column;
+	}
+	.reviews-thumb,
+	.apps-thumb {
+		margin: 0 auto;
+	}
+	.apps-control {
+		position: relative;
+		top: 0;
+		width: 100%;
+		margin: 10px 0;
+		.btn-share,
+		.btn-close {
+			right: 0;
+		}
+	}
+	.reviews-title,
+	.apps-title {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.profile-dropdown {
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		float: left;
+		.fa {
+			position: relative;
+			bottom: 0;
+			margin-left: 15px !important;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/* Head Profile */
+	.profile-photo {
+		top: -12vw;
+		margin: 0 auto;
+	}
+	.profile-item,
+	.company-item {
+		margin-bottom: 20px;
+	}
+	.details-wrap {
+		h6 {
+			margin-bottom: 5px;
+		}
+	}
+	.edit-profile {
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-align: right;
+		margin-top: 15px;
+		z-index: 300;
+	}
+	.photo-wrap {
+		max-height: 90px;
+	}
+	.profile-details {
+		h5 {
+			margin: 15px 0;
+			text-align: center;
+		}
+	}
+	
+	/* Company Details */
+	.edit-company-control {
+		position: relative;
+		padding: 10px;
+	}
+	
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: 991px) {
+	.Table {
+		font-size: 14px !important;
+		font-family: $fonts-robotoR !important;
+	}
+	.Table-row-item {
+		padding: 10px 5px;
+	}
+	.drop-col {
+		flex-direction: column;
+	}
+	.profile-details {
+		.profile-name {
+			text-align: center;
+			margin-top: 5px;
+		}
+	}
+	.user-name,
+	.dev-name-wrap {
+		justify-content: center;
+	}
+	.message-updated {
+		position: relative;
+		margin-top: 5px;
+	}
+	
+	.profile-dropdown {
+		justify-content: flex-start;
+		align-items: center;
+		.fa {
+			position: relative;
+			bottom: 0;
+			margin-left: 15px !important;
+		}
+	}
+	.helps-img {
+		float: right;
+		margin-left: 10px;
+	}
+	.input-group-btn.profile.open .dropdown-menu {
+		top: 3em;
+	}
+	.profile-details.edit-details {
+		
+	}
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	.profile-details {
+		padding-bottom: 20px;
+	}
+	.profile-photo {
+		top: 1vw;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+	.profile-details {
+		padding-bottom: 0;
+	}
+	.profile-photo {
+		top: -5vw;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1700px) {
+	.profile-photo {
+		top: -4vw;
+	}
+}
