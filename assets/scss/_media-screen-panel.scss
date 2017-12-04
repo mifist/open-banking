@@ -3,11 +3,23 @@
 
 /* Small devices (phones, 768px and down) */
 @media screen and (max-width: 767px) {
-	
+	.company-wrap.edit-company .btn-save-company,
+	.company-wrap.edit-company .btn-cancel-company {
+		display: inline-block;
+		text-align: center;
+		max-width: 115px;
+		margin-left: 15px;
+	}
 	/* Head Profile */
 	.profile-photo {
 		top: -16vw;
 		margin: 0 auto;
+	}
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: -15.5vw;
+		}
 	}
 	.profile-item,
 	.company-item {
@@ -56,9 +68,13 @@
 	
 	/* Company Details */
 	.edit-company-control {
-		position: relative;
+		position: initial;
 	}
-	
+	.btn-edit-company {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 	
 	
 	/* Modal */
@@ -96,13 +112,37 @@
 		min-width: 725px;
 		margin: 15px;
 	}
+	.profile-login    {
+		margin-right: 10px;
+		
+	}
+	
 }
 
 @media screen and (max-width: 480px) {
+	.navbar-brand img {
+		width: 100%;
+		max-width: 70px;
+	}
+	
+	.profile-login    {
+		.admin-img {
+			max-height: 45px;
+			max-width: 45px;
+			min-width: 45px;
+		}
+	}
+
 	/* Head Profile */
 	.profile-photo {
 		top: -30vw;
 		margin: 0 auto;
+	}
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: -30vw;
+		}
 	}
 	.reviews-details,
 	.apps-details {
@@ -186,10 +226,16 @@
 		position: relative;
 		padding: 10px;
 	}
-	
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: -11.5vw;
+		}
+	}
 }
 /* Medium devices (desktops, 992px and up) */
 @media screen and (max-width: 991px) {
+
 	.Table {
 		font-size: 14px !important;
 		font-family: $fonts-robotoR !important;
@@ -243,6 +289,13 @@
 	.profile-photo {
 		top: 1vw;
 	}
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: 1vw;
+			margin: 3px;
+		}
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -253,11 +306,26 @@
 	.profile-photo {
 		top: -5vw;
 	}
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: -5vw;
+			margin: 0;
+		}
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1700px) {
 	.profile-photo {
 		top: -4vw;
+	}
+	.photo-wrap {
+		position: relative;
+		.company-item.file {
+			top: -4vw;
+			margin: 0;
+		
+		}
 	}
 }
