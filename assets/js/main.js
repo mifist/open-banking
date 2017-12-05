@@ -14,6 +14,9 @@ $(document).ready(function(){
 	$('.filter-btn').click(function(){
 		$(this).toggleClass('active');
 	});
+	$('.modal-cat').click(function(){
+		$(this).toggleClass('active');
+	});
 	
 	// profile edit
 	$('.btn-edit').click(function(){
@@ -22,6 +25,10 @@ $(document).ready(function(){
 		$(this).addClass('hide');
 		$('.btn-save, .btn-cancel').removeClass('hide');
 	});
+	$('.edit-sic-link').click(function(){
+		$(this).toggleClass('edit');
+	});
+	
 	$('.btn-save, .btn-cancel').click(function(){
 		$('.profile-details').removeClass('edit-details');
 		$('.btn-edit').removeClass('hide').addClass('shows');

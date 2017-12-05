@@ -76,6 +76,40 @@
   min-height: 75px;
 }
 
+//social links
+.social-links.profile {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  li {
+    float: left;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      a {
+        margin-right: 10px;
+        min-width: 40px;
+      }
+      .company-input {
+        display: none;
+      }
+    }
+    .edit-sic-link {
+      &.edit {
+        &+.company-input {
+          display: none;
+        }
+      }
+    }
+    
+  }
+}
+
 .company-wrap {
   position: relative;
   background: $white;
@@ -128,7 +162,20 @@
     .message-updated {
       display: block;
     }
-
+    //social links
+    .social-links.profile {
+      li {
+        .edit-sic-link.edit {
+          & + .company-input {
+            display: block;
+          }
+          
+        }
+      
+      }
+    }
+    
+    
   }
 }
 
@@ -136,21 +183,7 @@
   margin-bottom: 35px;
 }
 
-//social links
-.social-links.profile {
-  display: flex;
-  justify-content: space-between;
-  li {
-    float: left;
-    margin-right: 0;
-    a {
 
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
 
 .add-social {
   display: flex;
@@ -322,11 +355,11 @@ button.close {
     color: $color-green;
   }
 }
-
-
 .modal-footer {
   border-top: 1px solid rgba(42, 30, 92, 0.4);
 }
+
+
 
 /*Developer page media */
 @media screen and (max-width: 980px) {
