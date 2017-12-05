@@ -643,16 +643,60 @@
 		color: $color-purpl;
 		width: 100%;
 		font-size: 18px;
-		li {
+		li, .modal-cat {
 			color: inherit;
 			font-size:inherit;
+			position: relative;
 			a {
 				color: inherit;
 				font-size:inherit;
+				padding-right: 30px;
+				&:after,
+				&:before {
+					content: '';
+					background: $color-purpl;
+					color: $color-purpl;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					position: absolute;
+					right: 15px;
+					bottom: 0;
+					top: 8px;
+					font-family: FontAwesome, sans-serif;
+					@include transition(all .3s);
+				}
 				&:hover,
 				&:focus {
 					color: $white;
 					background: $color-purpl;
+					&:after,
+					&:before {
+						content: "";
+						background: $white;
+						color: $color-purpl;
+						
+					}
+				}
+				
+			}
+			&.active {
+				a {
+					color: $white;
+					background: $color-purpl;
+					&:after{
+						background: $white;
+						color: $color-purpl;
+					}
+					&:before {
+						font-size: 13px;
+						content: "\f00c";
+						color: $color-purpl;
+						z-index: 2;
+						background: transparent;
+						top: 8px;
+						right: 14px;
+					}
 				}
 			}
 		}

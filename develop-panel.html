@@ -206,19 +206,48 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9 company-item">
                     <h6>Company social media links</h6>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="social-links profile">
-                                <li><a class="fa fa-linkedin" aria-hidden="true" href="#"></a></li>
-                                <li><a class="fa fa-facebook" aria-hidden="true" href="#"></a></li>
+                                <li>
+                                    <form action="">
+                                        <a class="fa fa-linkedin edit-sic-link" aria-hidden="true" href="#"></a>
+                                        <input class="company-input" type="url" value="https://somelink.com"
+                                               placeholder="Enter Terms of Use Link">
+                                        
+                                    </form>
+                                </li>
+                                <li>
+                                    <form action="">
+                                        <a class="fa fa-facebook edit-sic-link" aria-hidden="true" href="#"></a>
+                                        <input class="company-input" type="url" value="https://somelink.com"
+                                               placeholder="Enter Terms of Use Link">
+                                    </form>
+                                </li>
                                 <li> <!-- start - or like this -->
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <form action="">
+                                        <a class="edit-sic-link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                        <input class="company-input" type="url" value="https://somelink.com"
+                                               placeholder="Enter Terms of Use Link">
+                                    </form>
                                 </li><!-- end - or like this -->
-                                <li><a class="fa fa-github" aria-hidden="true" href="#"></a></li>
-                                <li><a class="fa fa-twitter" aria-hidden="true" href="#"></a></li>
+                                <li>
+                                    <form action="">
+                                        <a class="fa fa-github edit-sic-link" aria-hidden="true" href="#"></a>
+                                        <input class="company-input" type="url" value="https://somelink.com"
+                                               placeholder="Enter Terms of Use Link">
+                                    </form>
+                                </li>
+                                <li>
+                                    <form action="">
+                                        <a class="fa fa-twitter edit-sic-link" aria-hidden="true" href="#"></a>
+                                        <input class="company-input" type="url" value="https://somelink.com"
+                                               placeholder="Enter Terms of Use Link">
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-                            <form class="add-social" action="">
+                            <!--<form class="add-social" action="">
                                 <div class="input-group-btn social-choice hide">
                                     <button type="button" class="btn btn-dropdown dropdown-toggle"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -227,17 +256,47 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="fa fa-linkedin" aria-hidden="true" href="#"></a></li>
                                         <li><a class="fa fa-facebook" aria-hidden="true" href="#"></a></li>
-                                        <li> <!-- start - or like this -->
+                                        <li> &lt;!&ndash; start - or like this &ndash;&gt;
                                             <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                        </li><!-- end - or like this -->
+                                        </li>&lt;!&ndash; end - or like this &ndash;&gt;
                                         <li><a class="fa fa-github" aria-hidden="true" href="#"></a></li>
                                         <li><a class="fa fa-twitter" aria-hidden="true" href="#"></a></li>
                                     </ul>
-                                </div><!-- /btn-group -->
+                                </div>&lt;!&ndash; /btn-group &ndash;&gt;
 
                                 <input class="company-input media-link hide" type="url" value=""
                                        placeholder="Enter social media link">
                                 <a href="" class="media-link-span hide"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                <span class="message-updated">Updated</span>
+                            </form>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-item">
+                    <h6>Company Registered Location</h6>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 company-item">
+                            <form action="">
+                                <input class="company-input" type="text" value="Some Street"
+                                       placeholder="Street Address">
+                                <span class="message-updated">Updated</span>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 company-item">
+                            <form action="">
+                                <input class="company-input" type="text" value="123456" placeholder="Postcode">
+                                <span class="message-updated">Updated</span>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 company-item">
+                            <form action="">
+                                <input class="company-input" type="text" value="" placeholder="City">
+                                <span class="message-updated">Updated</span>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 company-item">
+                            <form action="">
+                                <input class="company-input" type="text" value="" placeholder="Country">
                                 <span class="message-updated">Updated</span>
                             </form>
                         </div>
@@ -394,9 +453,11 @@
                                                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="prodCat">
-                                                    <li><a href="#">Category 1</a></li>
-                                                    <li><a href="#">Category 2</a></li>
-                                                    <li><a href="#">Category 3</a></li>
+                                                    <li class="modal-cat"><a href="#">Category 1</a></li>
+                                                    <li class="modal-cat"><a href="#">Category 2</a></li>
+                                                    <li class="modal-cat"><a href="#">Category 3</a></li>
+                                                    <li class="modal-cat"><a href="#">Category 4</a></li>
+                                                    <li class="modal-cat"><a href="#">Category 5</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -410,9 +471,11 @@
                                                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="prodFeat">
-                                                    <li><a href="#">Feature 1</a></li>
-                                                    <li><a href="#">Feature 2</a></li>
-                                                    <li><a href="#">Feature 3</a></li>
+                                                    <li class="modal-cat"><a href="#">Feature 1</a></li>
+                                                    <li class="modal-cat"><a href="#">Feature 2</a></li>
+                                                    <li class="modal-cat"><a href="#">Feature 3</a></li>
+                                                    <li class="modal-cat"><a href="#">Feature 4</a></li>
+                                                    <li class="modal-cat"><a href="#">Feature 5</a></li>
                                                 </ul>
                                             </div>
                                         </div>

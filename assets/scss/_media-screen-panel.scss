@@ -3,6 +3,18 @@
 
 /* Small devices (phones, 768px and down) */
 @media screen and (max-width: 767px) {
+	
+	.company-wrap.edit-company .company-item,
+	.company-item {
+		min-height: 40px;
+	}
+	
+	.social-links.profile {
+		flex-wrap: wrap;
+		li {
+			margin-bottom: 15px;
+		}
+	}
 	.company-wrap.edit-company .btn-save-company,
 	.company-wrap.edit-company .btn-cancel-company {
 		display: inline-block;
@@ -189,6 +201,17 @@
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	.company-wrap.edit-company .company-item,
+	.company-item {
+		min-height: 40px;
+	}
+	.company-wrap.edit-company .btn-save-company,
+	.company-wrap.edit-company .btn-cancel-company {
+		display: inline-block;
+		text-align: center;
+		max-width: 115px;
+		margin-left: 15px;
+	}
 	/* Head Profile */
 	.profile-photo {
 		top: -12vw;
