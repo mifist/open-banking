@@ -3,10 +3,12 @@
 
 /* Small devices (phones, 768px and down) */
 @media screen and (max-width: 767px) {
-	
+	.input-group-btn.profile {
+		display: flex;
+	}
 	.company-wrap.edit-company .company-item,
 	.company-item {
-		min-height: 40px;
+		min-height: 40px !important;
 	}
 	
 	.social-links.profile {
@@ -203,7 +205,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.company-wrap.edit-company .company-item,
 	.company-item {
-		min-height: 40px;
+		min-height: 40px !important;
 	}
 	.company-wrap.edit-company .btn-save-company,
 	.company-wrap.edit-company .btn-cancel-company {

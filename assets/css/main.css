@@ -2657,7 +2657,8 @@ input[type=file].input-drag.big {
         margin-right: 10px;
         min-width: 40px; }
       .social-links.profile li form .company-input {
-        display: none; }
+        display: none;
+        margin-right: 10px; }
     .social-links.profile li .edit-sic-link.edit + .company-input {
       display: none; }
 
@@ -3414,9 +3415,14 @@ button.close {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (phones, 768px and down) */
 @media screen and (max-width: 767px) {
+  .input-group-btn.profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .company-wrap.edit-company .company-item,
   .company-item {
-    min-height: 40px; }
+    min-height: 40px !important; }
   .social-links.profile {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -3572,7 +3578,7 @@ button.close {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .company-wrap.edit-company .company-item,
   .company-item {
-    min-height: 40px; }
+    min-height: 40px !important; }
   .company-wrap.edit-company .btn-save-company,
   .company-wrap.edit-company .btn-cancel-company {
     display: inline-block;

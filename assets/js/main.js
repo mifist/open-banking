@@ -26,7 +26,8 @@ $(document).ready(function(){
 		$('.btn-save, .btn-cancel').removeClass('hide');
 	});
 	$('.edit-sic-link').click(function(){
-		$(this).toggleClass('edit');
+		$('.edit-sic-link.edit').removeClass('edit');
+		$(this).addClass('edit');
 	});
 	
 	$('.btn-save, .btn-cancel').click(function(){
