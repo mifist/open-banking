@@ -245,6 +245,18 @@
 		}
 	}
 }
+.home-desc-wrap p {
+	color: #fff;
+}
+.explor-div .btn:hover i,
+.explor-div .btn:hover img {
+	margin-right: 20px;
+}
+.explor-div .btn:hover i.fa:before,
+.explor-div .btn:hover img.fa {
+	color: #fff;
+	filter: brightness(10);
+}
 
 /* More links */
 .more-links-wrap {
