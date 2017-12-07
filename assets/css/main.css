@@ -1660,6 +1660,19 @@ input[type=file].input-drag.big {
       bottom: 0;
       font-size: 22px; }
 
+.home-desc-wrap p {
+  color: #fff; }
+
+.explor-div .btn:hover i,
+.explor-div .btn:hover img {
+  margin-right: 20px; }
+
+.explor-div .btn:hover i.fa:before,
+.explor-div .btn:hover img.fa {
+  color: #fff;
+  -webkit-filter: brightness(10);
+  filter: brightness(10); }
+
 /* More links */
 .more-links-wrap {
   background: #fff;
