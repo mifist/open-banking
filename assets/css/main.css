@@ -1485,6 +1485,9 @@ input[type=file].input-drag.big {
   .home-desc-wrap:last-child .btn-white:hover {
     color: #ee4266; }
 
+.home-desc-wrap p {
+  color: #fff !important; }
+
 .home-desc-item {
   color: #fff;
   margin-left: -15px;
